@@ -1,0 +1,38 @@
+student_no = int(input("Enter Student No : "))
+student_name = input("Enter Name : ")
+student_group = input("Enter Group : ")
+
+sub1 = int(input("sub1 marks : "))
+sub2 = int(input("sub2 marks : "))
+sub3 = int(input("sub3 marks : "))
+sub4 = int(input("sub4 marks : "))
+sub5 = int(input("sub5 marks : "))
+sub6 = int(input("sub6 marks : "))
+
+total = sub1 + sub2 + sub3 + sub4 + sub5 + sub6
+avg = total/6
+
+print("\n\nStudent No: ", student_no)
+print("Student Name : ", student_name)
+print("Student Group : " , student_group)
+
+
+if sub1 < 35 or sub2 < 35 or sub3 < 35 or sub4 < 35 or sub5 < 35 or sub6 < 35:
+    result = "Fail"
+    print("Result : " , result)
+else:
+    if avg >= 91:
+        result = "O-Grade"
+    elif avg >= 81:
+        result = "A-Grade"
+    elif avg >= 71:
+        result = "B-Grade"
+    elif avg >= 61:
+        result = "C-Grade"
+    elif avg >= 51:
+        result = "D-Grade"
+    else:
+        result = "E-Grade"
+    print("Total : " , total)
+    print("Average : " , avg)
+    print("Result : " , result)
